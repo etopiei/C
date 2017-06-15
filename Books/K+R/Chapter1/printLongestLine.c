@@ -17,10 +17,10 @@ int main() {
 
 		if(length > maxSoFar) {
 
-			maxSoFar = length;			
+			maxSoFar = length;
 			copy(longest, line);
 
-		}	
+		}
 
 	}
 
@@ -28,7 +28,7 @@ int main() {
 		printf("\nThe longest line was: %s\n", longest);
 	} else {
 		printf("No input\n");
-	}	
+	}
 
 	return 0;
 
@@ -37,7 +37,7 @@ int main() {
 int getLine(char line[], int max) {
 
 	int currentChar, i;
-	
+
 	for(i = 0; i < max - 1 && (currentChar = getchar()) != EOF && currentChar != '\n'; i++) {
 
 		line[i] = currentChar;
